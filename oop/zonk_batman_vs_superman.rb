@@ -16,18 +16,18 @@
 
 class Superhero 
 
-  attr_accessor :name, :hitpoints, :attack, :alive, :has_special_tool 
+  attr_accessor :name, :hitpoints, :attack, :alive, :has_special_tool, :hitpoints  
 
-  def initialize(name, hitpoints, attack)
-    @name = name 
-    @hitpoints = hitpoints
-    @attack = attack 
+  def initialize(actor)
+    @name = actor [:name] 
+    @hitpoints = actor[:hitpoints]
+    @attack = actor[:attack] 
   end 
 
   def grab_tool 
     
   end 
-    
+
 
 # Driver code - don't touch anything below this line.
 puts "TESTING the Superhero class..."
